@@ -8,7 +8,7 @@ export default function About() {
           <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
               <div class="breadcrumb-text">
-                <p>We sale fresh fruits</p>
+                <p>We sale the closth that fitted you!</p>
                 <h1>About Us</h1>
               </div>
             </div>
@@ -21,7 +21,7 @@ export default function About() {
           <div class="row">
             <div class="col-lg-7">
               <div class="featured-text">
-                <h2 class="pb-3">Why <span class="orange-text">Fruitkha</span></h2>
+                <h2 class="pb-3">Why <span class="orange-text">My Ecommerce Shop</span></h2>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 mb-4 mb-md-5">
                     <div class="list-box d-flex">
@@ -96,7 +96,7 @@ export default function About() {
             <div class="col-lg-4 col-md-6">
               <div class="single-team-item">
                 <div class="team-bg team-bg-1"></div>
-                <h4>Jimmy Doe <span>Farmer</span></h4>
+                <h4>Jimmy Doe <span>Manager</span></h4>
                 <ul class="social-link-team">
                   <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -107,7 +107,7 @@ export default function About() {
             <div class="col-lg-4 col-md-6">
               <div class="single-team-item">
                 <div class="team-bg team-bg-2"></div>
-                <h4>Marry Doe <span>Farmer</span></h4>
+                <h4>Marry Doe <span>Cashier</span></h4>
                 <ul class="social-link-team">
                   <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -118,7 +118,7 @@ export default function About() {
             <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
               <div class="single-team-item">
                 <div class="team-bg team-bg-3"></div>
-                <h4>Simon Joe <span>Farmer</span></h4>
+                <h4>Simon Joe <span>Cashier</span></h4>
                 <ul class="social-link-team">
                   <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>

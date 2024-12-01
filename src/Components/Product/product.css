@@ -1,0 +1,20 @@
+.image{
+  width: 200px;
+  height: 180px;
+  object-fit: contain;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+  /* Text truncation */
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Limit to 1 line */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  /* Ensure the container respects a fixed width */
+  width: 100%; /* Adjust as per your layout */
+}
