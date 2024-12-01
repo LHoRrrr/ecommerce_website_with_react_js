@@ -10,7 +10,7 @@ export default function header
         </div>
         </div>
 
-      <div class="top-header-area" id="sticker">
+      <div class="top-header-area mb-4" id="sticker">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-sm-12 text-center">
