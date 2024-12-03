@@ -1,33 +1,48 @@
-import React from 'react'
+import React from 'react';
+import { useCart } from '../contexts/CartContext';
+import './Header.css';
+import Image from '../img/logo.png';
 
-export default function header
-() {
+export default function Header() {
+  const cartContext = useCart(); // Retrieve the object from context
+  console.log(cartContext); // Debugging: log the entire object
+
+  const { cartItems = [] } = cartContext; // Destructure the `cartItems` array with a default empty array
+  console.log(cartItems); // Debugging: log the extracted cartItems array
+
+  // Calculate the total quantity of items in the cart
+  const totalQuantity = Array.isArray(cartItems)
+    ? cartItems.reduce((total, item) => total + item.quantity, 0)
+    : 0;
+
+  console.log(totalQuantity); // Debugging: log the total quantity
+
   return (
     <>
-        <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
+      <div className="loader">
+        <div className="loader-inner">
+          <div className="circle"></div>
         </div>
-        </div>
+      </div>
 
-      <div class="top-header-area mb-4" id="sticker">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-sm-12 text-center">
-              <div class="main-menu-wrap">
-                <div class="site-logo">
-                  <a href="index.html">
-                    <img src="assets/img/logo.png" alt=""/>
+      <div className="top-header-area mb-4" id="sticker">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-sm-12 text-center">
+              <div className="main-menu-wrap">
+                <div className="site-logo">
+                  <a href="/">
+                    <img src={Image} alt="Site Logo" />
                   </a>
                 </div>
 
-                <nav class="main-menu">
+                <nav className="main-menu">
                   <ul>
-                    <li class="current-list-item"><a href="/">Home</a>
-                    </li>
+                    <li className="current-list-item"><a href="/">Home</a></li>
                     <li><a href="about">About</a></li>
-                    <li><a href="#">Pages</a>
-                      <ul class="sub-menu">
+                    <li>
+                      <a href="#">Pages</a>
+                      <ul className="sub-menu">
                         <li><a href="error">404 page</a></li>
                         <li><a href="about">About</a></li>
                         <li><a href="cart">Cart</a></li>
@@ -37,15 +52,17 @@ export default function header
                         <li><a href="shop">Shop</a></li>
                       </ul>
                     </li>
-                    <li><a href="news">News</a>
-                      <ul class="sub-menu">
+                    <li>
+                      <a href="news">News</a>
+                      <ul className="sub-menu">
                         <li><a href="news">News</a></li>
                         <li><a href="singlen">Single News</a></li>
                       </ul>
                     </li>
                     <li><a href="contact">Contact</a></li>
-                    <li><a href="shop">Shop</a>
-                      <ul class="sub-menu">
+                    <li>
+                      <a href="shop">Shop</a>
+                      <ul className="sub-menu">
                         <li><a href="shop">Shop</a></li>
                         <li><a href="checkout">Check Out</a></li>
                         <li><a href="singlep">Single Product</a></li>
@@ -53,31 +70,42 @@ export default function header
                       </ul>
                     </li>
                     <li>
-                      <div class="header-icons">
-                        <a class="shopping-cart" href="cart"><i class="fas fa-shopping-cart"></i></a>
-                        <a class="mobile-hide search-bar-icon" href=""><i class="fas fa-search"></i></a>
+                      <div className="header-icons">
+                        <a className="shopping-cart" href="/cart">
+                          <i className="fas fa-shopping-cart"></i>
+                          <span>{totalQuantity}</span>
+                        </a>
+                        <a className="mobile-hide search-bar-icon" href="">
+                          <i className="fas fa-search"></i>
+                        </a>
                       </div>
                     </li>
                   </ul>
                 </nav>
-                <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-                <div class="mobile-menu"></div>
+                <a className="mobile-show search-bar-icon" href="#">
+                  <i className="fas fa-search"></i>
+                </a>
+                <div className="mobile-menu"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="search-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <span class="close-btn"><i class="fas fa-window-close"></i></span>
-              <div class="search-bar">
-                <div class="search-bar-tablecell">
+      <div className="search-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <span className="close-btn">
+                <i className="fas fa-window-close"></i>
+              </span>
+              <div className="search-bar">
+                <div className="search-bar-tablecell">
                   <h3>Search For:</h3>
-                  <input type="text" placeholder="Keywords"/>
-                  <button type="submit">Search <i class="fas fa-search"></i></button>
+                  <input type="text" placeholder="Keywords" />
+                  <button type="submit">
+                    Search <i className="fas fa-search"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -85,5 +113,5 @@ export default function header
         </div>
       </div>
     </>
-  )
+  );
 }
