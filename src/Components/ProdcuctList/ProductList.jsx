@@ -8,10 +8,8 @@ export default function ProductList() {
   if (!products || products.length === 0) {
     return <p>No products available.</p>;
   }
-  const limit = 3; // Set the limit to 5 items
-  
+  const limit = 6; 
   const limitedProducts = products.slice(0, limit);
-
   return (
     <div className="product-section mt-150 mb-150">
       <div className="container">
