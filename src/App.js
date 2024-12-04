@@ -30,7 +30,8 @@ function App() {
           <Route path='/singlen' element={<SingleNews></SingleNews>}/>
           <Route path='/error' element={<Error></Error>}/>
           <Route path='/shop' element={<Shop></Shop>}/>
-          <Route path='/singlep' element={<SingleProducts></SingleProducts>}/>
+          <Route path='/singlep/:id' element={<SingleProducts></SingleProducts>}/>
+          <Route path='/shop/:category' element={<Shop></Shop>}/>
         </Routes>
     <Footer></Footer>
    </>

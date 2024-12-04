@@ -8,7 +8,7 @@ export default function News() {
             <div class="row">
               <div class="col-lg-8 offset-lg-2 text-center">
                 <div class="breadcrumb-text">
-                  <p>Organic Information</p>
+                  <p>New Product Information</p>
                   <h1>News Article</h1>
                 </div>
               </div>

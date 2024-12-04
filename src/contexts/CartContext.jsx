@@ -40,7 +40,6 @@ function CartProvider({ children }) {
           : item
       );
 
-      // Remove items with zero quantity
       setCartItems(updatedItems.filter((item) => item.quantity > 0));
     }
   };

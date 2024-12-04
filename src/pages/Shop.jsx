@@ -1,5 +1,6 @@
 import React from 'react'
 import ShopProductList from '../Components/ShopProductLists/ShopProductList'
+import CategoryList from '../Components/CategoryList/CategoryList'
 
 export default function Shop() {
   return (
@@ -9,7 +10,7 @@ export default function Shop() {
           <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
               <div class="breadcrumb-text">
-                <p>Fresh and Organic</p>
+                <p>New look with our product</p>
                 <h1>Shop</h1>
               </div>
             </div>
@@ -19,35 +20,10 @@ export default function Shop() {
 
       <div class="product-section mt-150 mb-150">
         <div class="container">
-
           <div class="row">
-                    <div class="col-md-12">
-                        <div class="product-filters">
-                            <ul>
-                                <li class="active" data-filter="*">All</li>
-                                <li data-filter=".strawberry">Strawberry</li>
-                                <li data-filter=".berry">Berry</li>
-                                <li data-filter=".lemon">Lemon</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-          <ShopProductList></ShopProductList>
-
-
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="pagination-wrap">
-                <ul>
-                  <li><a href="#">Prev</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a class="active" href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">Next</a></li>
-                </ul>
-              </div>
-            </div>
+            <CategoryList></CategoryList>
           </div>
+          <ShopProductList></ShopProductList>
         </div>
       </div>
 

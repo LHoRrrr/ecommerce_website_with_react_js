@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../Product/product.css';
 import { useCart } from '../../contexts/CartContext';
+import { Link } from 'react-router-dom';
 
 export default function ShopProduct({ product }) {
   const { addToCart } = useCart();
@@ -9,19 +10,18 @@ export default function ShopProduct({ product }) {
   const handleAdd = (e) => {
     e.stopPropagation();
     addToCart(product);
-    console.log(product);
   };
 
   return (
     <div className="col-lg-4 col-md-6 text-center strawberry">
       <div className="single-product-item">
         <div className="product-image">
-          <a href={`/product/${product.id}`}>
+          <Link to={`/singlep/${product.id}`}>
             <img className='image' src={product.image || 'assets/img/products/default-img.jpg'} alt={product.title} />
-          </a>
+          </Link>
         </div>
         <h3>{product.title}</h3>
-        <p className="product-price">{`${product.price}$`}</p>
+        <p className="product-price">{`${(product.price.toFixed(2))}$`}</p>
         <button className="cart-btn" onClick={handleAdd}>
           <i className="fas fa-shopping-cart"></i> Add to Cart
         </button>

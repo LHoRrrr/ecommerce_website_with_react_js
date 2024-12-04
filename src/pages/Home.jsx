@@ -1,7 +1,6 @@
 import React from 'react'
 import ProductList from '../Components/ProdcuctList/ProductList'
 
-
 export default function Home() {
   return (
     <>
@@ -14,8 +13,8 @@ export default function Home() {
                     <p class="subtitle">Worth it with your money</p>
                     <h1>New Look & Fit Your Body</h1>
                     <div class="hero-btns">
-                      <a href="shop.html" class="boxed-btn">Collection</a>
-                      <a href="contact.html" class="bordered-btn">Contact Us</a>
+                      <a href="shop" class="boxed-btn">Collection</a>
+                      <a href="contact" class="bordered-btn">Contact Us</a>
                     </div>
                   </div>
                 </div>
@@ -75,7 +74,7 @@ export default function Home() {
                             <div class="price-box">
                                 <div class="inner-price">
                                       <span class="price">
-                                          <strong>30%</strong> <br/> off per kg
+                                          <strong>30%</strong> <br/> limited off
                                       </span>
                                   </div>
                               </div>
@@ -84,10 +83,10 @@ export default function Home() {
                       </div>
                       <div class="content-column col-lg-6">
                 <h3><span class="orange-text">Deal</span> of the month</h3>
-                          <h4>Hikan Strwaberry</h4>
+                          <h4>Mens Cotton Jacket</h4>
                           <div class="text">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</div>
                           <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2020/2/01"><div class="counter-column"><div class="inner"><span class="count">00</span>Days</div></div> <div class="counter-column"><div class="inner"><span class="count">00</span>Hours</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Mins</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Secs</div></div></div></div>
-                        <a href="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <a href="cart" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                       </div>
                   </div>
               </div>

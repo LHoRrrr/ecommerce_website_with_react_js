@@ -22,9 +22,9 @@ export const ProductProvider = ({ children }) => {
       let url = "https://fakestoreapi.com/products";
 
       if (category) {
-        url += `/category/${category}?limit=16`;
+        url += `/category/${category}?limit=20`;
       } else {
-        url += "?limit=16";
+        url += "?limit=21";
       }
 
       const res = await fetch(url);

@@ -1,0 +1,10 @@
+.single-product-img{
+  width: 500px;
+  margin-right: 20px;
+}
+.single-product-img img{
+  width: 80%;
+  height: 100%;
+  padding: 20%;
+  object-fit: contain;
+}

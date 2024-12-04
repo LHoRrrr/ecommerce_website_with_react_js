@@ -8,7 +8,7 @@ export default function ShopProductList() {
   if (!products || products.length === 0) {
     return <p>No products available.</p>;
   }
-  const limit = 12; 
+  const limit = 21; 
   const limitedProducts = products.slice(0, limit);
   return (
     <>

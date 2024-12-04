@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 export default function Cksummary({cartItems= []}) {
   const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
-  console.log(cartItems);
 
   // Assuming a tax rate of 10%
   const taxRate = 0.1;
