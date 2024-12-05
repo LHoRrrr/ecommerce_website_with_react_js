@@ -13,7 +13,7 @@ export default function Item({ item, handleRemove, handleAdd, handleRemoveQuanti
       }
     }
   };
-  const formatCurrency = (amount) => `$${amount.toFixed(2)}`;
+  //const formatCurrency = (amount) => `$${amount.toFixed(2)}`;
   return (
     <tr className="table-body-row">
       <td className="product-remove">

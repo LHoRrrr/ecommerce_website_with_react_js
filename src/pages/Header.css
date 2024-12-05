@@ -1,3 +1,6 @@
+.center {
+  padding-top: 15px;
+}
 .shopping-cart span {
   width: 10px;
   height: 10px;
@@ -12,5 +15,74 @@
   font-size: 12px;
 }
 .site-logo img{
-  width: 50px;
+  width: 600px;
 }
+/* Header styling */
+#sticker {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(56,76,84);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+/* Ensure the header adapts to different screen sizes */
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+/* Sub-menu styling */
+.main-menu ul li {
+  position: relative;
+}
+
+.main-menu ul li .sub-menu {
+  display: none; /* Hide sub-menu by default */
+  position: absolute;
+  top: 100%; /* Position the sub-menu below the parent */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 200px;
+}
+
+.main-menu ul li .sub-menu li {
+  padding: 10px 20px;
+}
+
+.main-menu ul li .sub-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.main-menu ul li:hover .sub-menu {
+  display: block; /* Show the sub-menu on hover */
+}
+
+.main-menu ul li .sub-menu li:hover {
+  background-color: #f5f5f5; /* Highlight the item on hover */
+}
+/* Style for active menu item */
+.main-menu ul li.active > a {
+  color: orange; /* Change text color to orange */
+  font-weight: bold; /* Optional: Make it bold */
+}
+
+/* Style for the dropdown active item */
+.main-menu ul li .sub-menu li.active > a {
+  color: orange; /* Change text color for active sub-menu items */
+}
+
+

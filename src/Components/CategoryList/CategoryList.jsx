@@ -6,8 +6,8 @@ export default function CategoryList() {
   const {categorie, loading} = useGetCategory();
   return (
     <>
-      <div class="col-md-12">
-        <div class="product-filters">
+      <div className="col-md-12">
+        <div className="product-filters">
             <ul>
               {
                 loading ? Array.from({length: 4}).map((_, index) =>(

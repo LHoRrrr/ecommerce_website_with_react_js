@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Footer.css'
 
 export default function Footer() {
   // State to track clicked headers and their colors
@@ -10,20 +11,20 @@ export default function Footer() {
   const handleHeaderClick = (section) => {
     setHeaderColors((prevState) => ({
       ...prevState,
-      [section]: prevState[section] === 'orange' ? 'white' : 'orange', // Toggle between orange and black
+      [section]: prevState[section] === 'orange' ? 'orange' : 'orange', // Toggle between orange and black
     }));
   };
 
   return (
     <>
       <div className="footer-area">
-        <div className="container">
+        <div className="container text">
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="footer-box about-widget">
                 <h2
                   className="widget-title"
-                  style={{ color: headerColors['About us'] || 'black' }}
+                  style={{ color: headerColors['About us'] || 'orange' }}
                   onClick={() => handleHeaderClick('About us')}
                 >
                   About us
@@ -38,7 +39,7 @@ export default function Footer() {
               <div className="footer-box get-in-touch">
                 <h2
                   className="widget-title"
-                  style={{ color: headerColors['Get in Touch'] || 'black' }}
+                  style={{ color: headerColors['Get in Touch'] || 'orange' }}
                   onClick={() => handleHeaderClick('Get in Touch')}
                 >
                   Get in Touch
@@ -54,7 +55,7 @@ export default function Footer() {
             <div className="footer-box pages">
               <h2
                 className="widget-title"
-                style={{ color: headerColors['Pages'] || 'black' }}
+                style={{ color: headerColors['Get in Touch'] || 'orange' }}
                 onClick={() => handleHeaderClick('Pages')}
               >
                 Pages
@@ -82,7 +83,7 @@ export default function Footer() {
               <div className="footer-box subscribe">
                 <h2
                   className="widget-title"
-                  style={{ color: headerColors['Subscribe'] || 'black' }}
+                  style={{ color: headerColors['Subscribe'] || 'orange' }}
                   onClick={() => handleHeaderClick('Subscribe')}
                 >
                   Subscribe

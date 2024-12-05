@@ -12,7 +12,7 @@ export default function ShopProductList() {
   const limitedProducts = products.slice(0, limit);
   return (
     <>
-      <div class="row product-lists">
+      <div className="row product-lists">
       {limitedProducts.map((product) => (
             <ShopProduct key={product.id} product={product} />
           ))}

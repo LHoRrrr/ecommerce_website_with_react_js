@@ -21,7 +21,7 @@ export default function Cart() {
 
      {/*Cart Conatainer */}
 
-      <div class="logo-carousel-section">
+      <div className="logo-carousel-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">

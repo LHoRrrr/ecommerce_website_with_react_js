@@ -18,20 +18,20 @@ export default function CartContainer() {
     removeFromQuantity(productId)
   }
   return (
-    <div class="cart-section mt-150 mb-150">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-12">
-            <div class="cart-table-wrap">
-              <table class="cart-table">
-                <thead class="cart-table-head">
-                  <tr class="table-head-row">
-                    <th class="product-remove"></th>
-                    <th class="product-image">Product Image</th>
-                    <th class="product-name">Name</th>
-                    <th class="product-price">Price</th>
-                    <th class="product-quantity">Quantity</th>
-                    <th class="product-total">Total</th>
+    <div className="cart-section mt-150 mb-150">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 col-md-12">
+            <div className="cart-table-wrap">
+              <table className="cart-table">
+                <thead className="cart-table-head">
+                  <tr className="table-head-row">
+                    <th className="product-remove"></th>
+                    <th className="product-image">Product Image</th>
+                    <th className="product-name">Name</th>
+                    <th className="product-price">Price</th>
+                    <th className="product-quantity">Quantity</th>
+                    <th className="product-total">Total</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -39,14 +39,14 @@ export default function CartContainer() {
                     cartItems.map((item) => (
                     <Item key={item.id} item={item} handleRemove={handleRemove} handleAdd={handleAdd} handleRemoveQuantity={handleRemoveQuantity}></Item>
                     )) :
-                    <h4 className='no-item'>No item in the cart!</h4>
+                    <h4 classNameName='no-item'>No item in the cart!</h4>
                   }
                 </tbody>
               </table>
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div className="col-lg-4">
             <Summary cartItems = {cartItems}></Summary>
           </div>
         </div>

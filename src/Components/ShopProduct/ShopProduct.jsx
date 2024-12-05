@@ -22,7 +22,7 @@ export default function ShopProduct({ product }) {
         </div>
         <h3>{product.title}</h3>
         <p className="product-price">{`${(product.price.toFixed(2))}$`}</p>
-        <button className="cart-btn" onClick={handleAdd}>
+        <button className="cart-btn bg-dark text-white" onClick={handleAdd}>
           <i className="fas fa-shopping-cart"></i> Add to Cart
         </button>
       </div>
