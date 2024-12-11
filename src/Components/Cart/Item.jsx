@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './items.css'
 
 export default function Item({ item, handleRemove, handleAdd, handleRemoveQuantity }) {
   const handleQuantityChange = (e) => {
