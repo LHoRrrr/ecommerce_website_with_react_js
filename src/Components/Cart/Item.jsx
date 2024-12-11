@@ -5,10 +5,9 @@ import './items.css'
 export default function Item({ item, handleRemove, handleAdd, handleRemoveQuantity }) {
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value, 10);
-
     if (newQuantity > 0 && newQuantity !== item.quantity) {
       if (newQuantity > item.quantity) {
-        handleAdd(item.id);
+        handleAdd(item);
       } else {
         handleRemoveQuantity(item.id);
       }
